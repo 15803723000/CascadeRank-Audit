@@ -37,6 +37,9 @@ Python 3.10–3.12 is supported.
 python -m pip install -r requirements.txt
 ```
 
+For a minimal audit-only installation and local-plugin support, use
+`python -m pip install -e .`; see [`INSTALLATION.md`](INSTALLATION.md).
+
 ## Run the two teaching cases
 
 ```powershell

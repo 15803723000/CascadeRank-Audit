@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cascaderank-audit"
+version = "0.1.0"
+description = "Evidence-first audits for graph critical-node ranking claims."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "CascadeRank"}]
+dependencies = [
+  "matplotlib>=3.8,<4",
+  "networkx>=3.2,<4",
+  "numpy>=1.26,<3",
+  "torch>=2.3,<3",
+  "torch-geometric>=2.7,<3",
+]
+
+[project.optional-dependencies]
+legacy-report = ["openai>=2.46,<3"]
+dev = ["flake8>=7,<8", "pytest>=8,<9"]
+
+[project.scripts]
+cascaderank-audit = "cascaderank.audit:main"
+cascaderank-verify = "cascaderank.verify:main"
+cascaderank = "cascaderank.pipeline:main"
+
+[tool.setuptools.packages.find]
+include = ["cascaderank*"]

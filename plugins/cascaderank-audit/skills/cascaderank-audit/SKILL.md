@@ -8,6 +8,9 @@ description: Run a local, evidence-first audit of a graph critical-node ranking 
 Use this skill to test a claim; do not use it to manufacture a favorable GNN
 narrative. Read `references/audit-protocol.md` before interpreting a result.
 
+Before running the skill outside this source checkout, install the local audit
+runtime with `python -m pip install -e .` from the CascadeRank repository.
+
 ## Workflow
 
 1. Identify the graph input and write the precise claim under test. Require an
