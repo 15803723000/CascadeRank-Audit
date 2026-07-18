@@ -94,6 +94,17 @@ are in [`SUBMISSION.md`](SUBMISSION.md). It intentionally leaves the public
 repository URL, YouTube URL, feedback Session ID, and license as placeholders:
 they must be filled with real submission artifacts.
 
+## Built with Codex
+
+Codex was used to construct and validate this project during the build period.
+It helped implement the audit CLI, manifest verifier, Codex plugin wrappers,
+test suite, reproducible demo, and release packaging. The decisive product and
+research choices were to reject the original unsupported “GNN wins” narrative,
+to expose the leaky proxy as a counterexample, and to preserve fixed negative
+or inconclusive verdicts instead of optimizing for a favorable chart. The
+repository history records these implementation stages and their validation
+gates.
+
 ## Legacy pipeline
 
 `main.py` remains for the original ranking demonstration, including its
