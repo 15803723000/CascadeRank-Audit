@@ -57,11 +57,10 @@ the report, and explain the result boundary to the user.
 ## Submission fields requiring real external values
 
 - Public repository URL: `https://github.com/15803723000/CascadeRank-Audit`
-- Public YouTube demo URL: `<PUBLIC_YOUTUBE_URL>`
+- Public YouTube demo URL: `https://youtu.be/J0hGlqSpYZM`
 - Codex `/feedback` Session ID: `<REAL_FEEDBACK_SESSION_ID>`
 - License selected by the rights holder: `MIT`
 
-Do not replace the remaining placeholders with invented values. The
-implementation, public repository, and demo script are ready, but the public
-video and feedback Session ID require actual account actions outside this
-repository.
+Do not replace the remaining placeholder with an invented value. The
+implementation, public repository, and public demo video are ready, but the
+feedback Session ID must be copied from the actual Codex `/feedback` result.
