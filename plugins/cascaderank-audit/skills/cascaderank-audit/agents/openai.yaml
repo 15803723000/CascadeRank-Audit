@@ -1,0 +1,4 @@
+interface:
+  display_name: "CascadeRank Audit"
+  short_description: "Audit GNN critical-node ranking claims."
+  default_prompt: "Audit my graph ranking claim for leakage, baselines, and evidence."

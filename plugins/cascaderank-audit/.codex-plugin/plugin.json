@@ -1,0 +1,18 @@
+{
+  "name": "cascaderank-audit",
+  "version": "0.1.0",
+  "description": "Evidence-first graph ranking claim audits for Codex.",
+  "author": {
+    "name": "CascadeRank"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CascadeRank Audit",
+    "shortDescription": "Audit GNN ranking claims with local evidence.",
+    "longDescription": "Detect leakage, compare strong baselines, and record fixed graph-ranking verdicts without an API key.",
+    "developerName": "CascadeRank",
+    "category": "Education",
+    "capabilities": [],
+    "defaultPrompt": "Audit my graph ranking claim for leakage, baselines, and reproducible evidence."
+  }
+}

@@ -1,0 +1,8 @@
+torch>=2.3,<3
+torch-geometric>=2.7,<3
+networkx>=3.2,<4
+matplotlib>=3.8,<4
+numpy>=1.26,<3
+openai>=2.46,<3
+flake8>=7,<8
+pytest>=8,<9
