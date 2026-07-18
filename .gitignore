@@ -10,3 +10,4 @@ explanation.txt
 audit_output/
 demo_output/
 *.egg-info/
+dist/
