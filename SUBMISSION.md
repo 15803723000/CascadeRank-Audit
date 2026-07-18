@@ -56,11 +56,12 @@ the report, and explain the result boundary to the user.
 
 ## Submission fields requiring real external values
 
-- Public repository URL: `<PUBLIC_REPOSITORY_URL>`
+- Public repository URL: `https://github.com/15803723000/CascadeRank-Audit`
 - Public YouTube demo URL: `<PUBLIC_YOUTUBE_URL>`
 - Codex `/feedback` Session ID: `<REAL_FEEDBACK_SESSION_ID>`
-- License selected by the rights holder: `<LICENSE_NAME>`
+- License selected by the rights holder: `MIT`
 
-Do not replace these placeholders with invented values. The implementation and
-demo script are ready, but those four items require an actual publication or
-account action outside this repository.
+Do not replace the remaining placeholders with invented values. The
+implementation, public repository, and demo script are ready, but the public
+video and feedback Session ID require actual account actions outside this
+repository.
