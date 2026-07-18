@@ -58,9 +58,8 @@ the report, and explain the result boundary to the user.
 
 - Public repository URL: `https://github.com/15803723000/CascadeRank-Audit`
 - Public YouTube demo URL: `https://youtu.be/J0hGlqSpYZM`
-- Codex `/feedback` Session ID: `<REAL_FEEDBACK_SESSION_ID>`
+- Codex `/feedback` Session ID: `019f734b-2e57-7570-816e-7515eb055f59`
 - License selected by the rights holder: `MIT`
 
-Do not replace the remaining placeholder with an invented value. The
-implementation, public repository, and public demo video are ready, but the
-feedback Session ID must be copied from the actual Codex `/feedback` result.
+All external submission values above were copied from their actual public or
+Codex-generated artifacts; none are inferred placeholders.
