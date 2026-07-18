@@ -22,7 +22,11 @@ narrative. Read `references/audit-protocol.md` before interpreting a result.
 
 3. Read `audit_manifest.json` before the human-readable report. Check input and
    artifact hashes, `leakage_findings`, all `claims`, the best baseline, and
-   random-trial count.
+   random-trial count. Run the independent verifier before reporting:
+
+   ```powershell
+   python plugins/cascaderank-audit/skills/cascaderank-audit/scripts/verify_audit.py --manifest audit_output/topology_only/audit_manifest.json --edge-csv <edges.csv>
+   ```
 4. Report the verdict exactly. `NOT_SUPPORTED` means the claimed advantage was
    not established. `INCONCLUSIVE` means the experiment did not test the
    broader claim. Do not convert either into a positive conclusion.

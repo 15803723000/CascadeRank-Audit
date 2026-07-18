@@ -3,6 +3,7 @@ import networkx as nx
 from cascaderank.audit import AuditConfig, collective_influence_scores
 from cascaderank.audit import detect_signal_overlap
 from cascaderank.audit import evaluate_ranking_audit, run_audit
+from cascaderank.verify import verify_manifest
 
 
 def test_detect_signal_overlap_identifies_direct_leakage() -> None:
@@ -94,3 +95,9 @@ def test_audit_run_writes_hashed_artifacts(tmp_path) -> None:
     assert result.chart_path.is_file()
     assert result.evidence["leakage_findings"] == []
     assert "collective_influence" in result.evidence["metrics"]
+    verified = verify_manifest(result.manifest_path, edge_csv)
+    assert verified["valid"] is True
+    result.report_path.write_text("tampered", encoding="utf-8")
+    tampered = verify_manifest(result.manifest_path, edge_csv)
+    assert tampered["valid"] is False
+    assert "hash mismatch: audit_report.md" in tampered["errors"]

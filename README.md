@@ -60,6 +60,19 @@ Each run writes the following coherent set to `--output-dir`:
 - `attack_curves.png`: every deterministic strategy plus the 5th–95th-percentile
   random-ranking envelope.
 
+Verify the report before sharing it. This command fails if a report artifact,
+the supplied input CSV, or a fixed verdict rule does not match the manifest:
+
+```powershell
+python -m cascaderank.verify --manifest .\audit_output\topology_only\audit_manifest.json --edge-csv .\examples\bridge20\edges.csv
+```
+
+For a local two-case demonstration (including verification after each run):
+
+```powershell
+.\scripts\run_demo.ps1
+```
+
 Attack AUC integrates the largest connected component divided by the original
 node count; lower is a more effective fixed removal ranking. Checkpoints are
 LCC at 5% and 10% removed. Rankings are fixed before deletion and are not
@@ -72,6 +85,11 @@ The local plugin bundle is under
 to read `audit_manifest.json` before interpreting results and prohibits
 rewriting a negative or inconclusive verdict. It packages a no-key local audit
 workflow for a Codex-based demonstration.
+
+An English, evidence-constrained description and a three-minute demo sequence
+are in [`SUBMISSION.md`](SUBMISSION.md). It intentionally leaves the public
+repository URL, YouTube URL, feedback Session ID, and license as placeholders:
+they must be filled with real submission artifacts.
 
 ## Legacy pipeline
 
